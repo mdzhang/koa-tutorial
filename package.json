@@ -5,7 +5,8 @@
   "author": "Michelle D Zhang <zhang.michelle.d@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "koa": "^2.2.0"
+    "koa": "^2.2.0",
+    "koa-morgan": "^1.0.1"
   },
   "devDependencies": {
     "eslint": "^3.17.1"
