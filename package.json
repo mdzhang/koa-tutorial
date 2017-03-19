@@ -1,0 +1,16 @@
+{
+  "name": "koa-tutorial",
+  "version": "0.0.1",
+  "repository": "git+https://github.com/mdzhang/koa-tutorial",
+  "author": "Michelle D Zhang <zhang.michelle.d@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
