@@ -6,6 +6,7 @@ Sample Koa.js project
 
 - [Installation](#installation)
 - [Running](#running)
+- [Testing](#testing)
 
 ## Installation
 
@@ -40,3 +41,7 @@ Sample Koa.js project
 ## Running
 
 `npm start`
+
+## Testing
+
+`npm test`

@@ -7,10 +7,10 @@ const router = new Router({
 
 router.use(authenticate);
 
-router.redirect('/', '/ping');
+router.redirect('/', '/api/ping');
 
 router.get('/ping', (ctx) => {
-  ctx.body = 'Authenticated OK';
+  ctx.body = 'Authorized OK';
 });
 
 module.exports = router;

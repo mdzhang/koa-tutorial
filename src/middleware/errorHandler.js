@@ -1,19 +1,16 @@
 const formatError = (err) => {
   return {
     title: err.name,
-    detail: err.message,
-    status: err.status || err.statusCode || 500,
-    meta: {
-      backtrace: err.stack
-    }
+    detail: err.message && err.message.trim(),
+    status: err.status || err.statusCode || 500
   };
 };
 
 const errorHandler = async (ctx, next) => {
   try {
     await next();
-    const status = ctx.status || 404;
-    if (status === 404) ctx.throw(404);
+    const status = ctx.status || 500;
+    if (status >= 400) ctx.throw(status);
   } catch (err) {
     const formattedError = formatError(err);
     ctx.status = formattedError.status;
