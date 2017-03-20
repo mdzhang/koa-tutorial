@@ -6,9 +6,11 @@
   "license": "MIT",
   "dependencies": {
     "koa": "^2.2.0",
-    "koa-morgan": "^1.0.1"
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^7.1.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.1.1",
     "eslint": "^3.17.1"
   },
   "scripts": {
